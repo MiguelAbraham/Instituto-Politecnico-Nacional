@@ -1,0 +1,60 @@
+<html>
+<html lang="es">
+<head>
+  <title>Instituto Politécnico Nacional</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }
+    header, footer { background-color: #800000; color: white; text-align: center; padding: 20px; }
+    nav { background-color: #600000; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; }
+    section { padding: 20px; max-width: 1000px; margin: auto; }
+    .media { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px; }
+    .media img, .media video { max-width: 300px; border: 2px solid #800000; border-radius: 8px; }
+    .audio-section { text-align: center; margin: 30px 0; }
+    button { background-color: #800000; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Instituto Politécnico Nacional</h1>
+    <p>"La Técnica al Servicio de la Patria"</p>
+  </header>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="historia.html">Historia</a>
+    <a href="oferta.html">Oferta Educativa</a>
+    <a href="https://www.ipn.mx" target="_blank">Sitio Oficial</a>
+  </nav>
+  <section>
+    <h2>Bienvenido al Instituto Politécnico Nacional</h2>
+    <p>El Instituto Politécnico Nacional (IPN) es una institución pública de educación superior y posgrado en México. Es ampliamente reconocido por su impacto en las ciencias aplicadas, la tecnología, la ingeniería y la innovación educativa. El IPN ha contribuido de forma decisiva al desarrollo industrial y científico del país.</p>
+
+    <p>Desde su fundación en 1936, el IPN ha crecido exponencialmente, integrando diversas áreas del conocimiento en su oferta académica. Posee 98 unidades académicas distribuidas en todo el país, incluyendo Centros de Estudios Científicos y Tecnológicos (CECyT), Escuelas Superiores (ESIME, ESCOM, ENCB, etc.) y Centros de Investigación (como el CIC, CIITEC y CINVESTAV).</p>
+
+    <p>Entre sus principales características se encuentran su fuerte compromiso con la inclusión social, la excelencia académica, la investigación aplicada y el desarrollo tecnológico. Además, ofrece múltiples programas de intercambio internacional, actividades culturales, deportivas y formación humanística.</p>
+
+    <p>Gracias a su infraestructura y capital humano, el IPN ha sido la cuna de múltiples desarrollos tecnológicos que benefician directamente a la sociedad mexicana. Muchos de sus egresados ocupan posiciones estratégicas en el gobierno, la industria, la ciencia y la academia.</p>
+
+    <button onclick="mostrarMensaje()">Conoce más sobre nosotros</button>
+    <p id="mensaje" style="color: green; font-weight: bold;"></p>
+  </section>
+  <section class="media">
+    <img src="E:\logotipo_ipn.png" alt="Logo IPN">
+    <video controls>
+      <source src="E:\Historia del IPN.mp4" type="video/mp4">
+    </video>
+  </section>
+  <section class="audio-section">
+    <h2>Escucha el Himno del IPN</h2>
+    <audio controls>
+      <source src="E:\Himno del IPN.mp3" type="audio/mpeg">
+    </audio>
+  </section>
+  <footer>
+    <p> 2025 Instituto Politécnico Nacional | Página desarrollada con fines educativos</p>
+  </footer>
+  <script>
+    function mostrarMensaje() {document.getElementById("mensaje").textContent = "El IPN ha formado generaciones de líderes, científicos, ingenieros y humanistas comprometidos con el desarrollo sustentable de México.";}
+  </script>
+</body>
+</html>
